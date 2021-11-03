@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:wemos-01-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -20,7 +19,7 @@ U 1 1 5763EB78
 P 9650 1400
 F 0 "P1" H 9650 1850 50  0000 C CNN
 F 1 "CONN_01X08" V 9750 1400 50  0000 C CNN
-F 2 "D1_mini:D1_mini_Pin_Header" H 9650 1400 50  0001 C CNN
+F 2 "WeMos_Shield_Greynaga:D1_mini_Pin_Header" H 9650 1400 50  0001 C CNN
 F 3 "" H 9650 1400 50  0000 C CNN
 	1    9650 1400
 	1    0    0    -1  
@@ -31,7 +30,7 @@ U 1 1 5763EBF2
 P 10100 1400
 F 0 "P2" H 10100 1850 50  0000 C CNN
 F 1 "CONN_01X08" V 10200 1400 50  0000 C CNN
-F 2 "D1_mini:D1_mini_Pin_Header" H 10100 1400 50  0001 C CNN
+F 2 "WeMos_Shield_Greynaga:D1_mini_Pin_Header" H 10100 1400 50  0001 C CNN
 F 3 "" H 10100 1400 50  0000 C CNN
 	1    10100 1400
 	-1   0    0    -1  
@@ -98,7 +97,7 @@ U 1 1 5AFC7E17
 P 3750 4000
 F 0 "U1" H 3750 4678 50  0000 C CNN
 F 1 "RFM95W-915S2" H 3750 4587 50  0000 C CNN
-F 2 "RF_Module:HOPERF_RFM9XW_SMD_WeMos" H 450 5650 50  0001 C CNN
+F 2 "WeMos_Shield_Greynaga:HOPERF_RFM9XW_SMD_WeMos" H 450 5650 50  0001 C CNN
 F 3 "http://www.hoperf.com/upload/rf/RFM95_96_97_98W.pdf" H 450 5650 50  0001 C CNN
 	1    3750 4000
 	1    0    0    -1  
@@ -119,7 +118,7 @@ U 1 1 5AFD4207
 P 3950 3100
 F 0 "C2" V 3900 2950 50  0000 C CNN
 F 1 "10u" V 3800 2800 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 3950 3100 50  0001 C CNN
+F 2 "WeMos_Shield_Greynaga:C_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 3950 3100 50  0001 C CNN
 F 3 "~" H 3950 3100 50  0001 C CNN
 	1    3950 3100
 	0    -1   -1   0   
@@ -130,7 +129,7 @@ U 1 1 5AFD42C5
 P 3950 2900
 F 0 "C1" V 4150 2750 50  0000 C CNN
 F 1 "1u" V 4050 2600 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 3950 2900 50  0001 C CNN
+F 2 "WeMos_Shield_Greynaga:C_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 3950 2900 50  0001 C CNN
 F 3 "~" H 3950 2900 50  0001 C CNN
 	1    3950 2900
 	0    -1   -1   0   
@@ -167,8 +166,6 @@ Wire Wire Line
 Wire Wire Line
 	4250 4400 4400 4400
 Wire Wire Line
-	3250 4200 3100 4200
-Wire Wire Line
 	3250 4000 3100 4000
 Wire Wire Line
 	3250 3900 3100 3900
@@ -184,8 +181,6 @@ Text Label 3100 3900 2    50   ~ 0
 D6
 Text Label 3100 4000 2    50   ~ 0
 D0
-Text Label 3100 4200 2    50   ~ 0
-RST
 Text Label 4400 4200 0    50   ~ 0
 G2
 Text Label 4400 4300 0    50   ~ 0
@@ -245,7 +240,7 @@ U 1 1 5AFDE5C3
 P 4700 3900
 F 0 "J2" V 4650 3750 50  0000 L CNN
 F 1 "Conn_01x01" V 4800 3750 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_WeMos" H 4700 3900 50  0001 C CNN
+F 2 "WeMos_Shield_Greynaga:PinSocket_1x01_P2.54mm_WeMos" H 4700 3900 50  0001 C CNN
 F 3 "~" H 4700 3900 50  0001 C CNN
 	1    4700 3900
 	0    1    1    0   
@@ -273,7 +268,7 @@ U 1 1 5AFDFE32
 P 7150 3700
 F 0 "J1" H 7150 4050 50  0000 C CNN
 F 1 "Conn_01x04" H 7150 3950 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_WeMos" H 7150 3700 50  0001 C CNN
+F 2 "WeMos_Shield_Greynaga:PinSocket_1x04_P2.54mm_WeMos" H 7150 3700 50  0001 C CNN
 F 3 "~" H 7150 3700 50  0001 C CNN
 	1    7150 3700
 	1    0    0    -1  
@@ -306,7 +301,7 @@ U 1 1 5AFEED37
 P 5500 4050
 F 0 "A2" V 5903 4073 60  0000 R CNN
 F 1 "ANT" V 5797 4073 60  0000 R CNN
-F 2 "Cats_ArduinoShieldLoRa:SMA_EDGELAUNCH_UFL" H 5500 4050 60  0001 C CNN
+F 2 "WeMos_Shield_Greynaga:SMA_EDGELAUNCH_UFL_WeMos_Lora" H 5500 4050 60  0001 C CNN
 F 3 "" H 5500 4050 60  0000 C CNN
 	1    5500 4050
 	0    -1   -1   0   
@@ -317,4 +312,114 @@ Connection ~ 5350 3250
 Wire Wire Line
 	5350 4150 5500 4150
 Connection ~ 5350 4150
+NoConn ~ 10300 1150
+NoConn ~ 10300 1650
+NoConn ~ 10300 1750
+NoConn ~ 9450 1050
+NoConn ~ 9450 1250
+NoConn ~ 9450 1350
+NoConn ~ 9450 1650
+NoConn ~ 9450 1750
+Text Notes 2525 4275 0    50   ~ 0
+Fix RST pin to NC\n29 Julio 2021
+NoConn ~ 3250 4200
+$Comp
+L wemos-01-rescue:Logos U2
+U 1 1 61035B73
+P 8875 3375
+F 0 "U2" H 8974 3421 50  0000 L CNN
+F 1 "Kicad-Logo2" H 8974 3330 50  0000 L CNN
+F 2 "WeMos_Shield_Greynaga:KiCad-Logo2_6mm_SilkScreen" H 8875 3375 50  0001 C CNN
+F 3 "" H 8875 3375 50  0001 C CNN
+	1    8875 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L wemos-01-rescue:Logos U3
+U 1 1 6103847E
+P 8875 3625
+F 0 "U3" H 8974 3671 50  0000 L CNN
+F 1 "OSHW_2_7" H 8974 3580 50  0000 L CNN
+F 2 "WeMos_Shield_Greynaga:OSHW-Logo2_7.3x6mm_SilkScreen" H 8875 3625 50  0001 C CNN
+F 3 "" H 8875 3625 50  0001 C CNN
+	1    8875 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L wemos-01-rescue:Logos U4
+U 1 1 61038AF1
+P 8875 3875
+F 0 "U4" H 8974 3921 50  0000 L CNN
+F 1 "OSHW_2_9" H 8974 3830 50  0000 L CNN
+F 2 "WeMos_Shield_Greynaga:OSHW-Logo2_9.8x8mm_SilkScreen" H 8875 3875 50  0001 C CNN
+F 3 "" H 8875 3875 50  0001 C CNN
+	1    8875 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L wemos-01-rescue:Logos U5
+U 1 1 6103A0AF
+P 8875 4125
+F 0 "U5" H 8974 4171 50  0000 L CNN
+F 1 "Firma_Cooper" H 8974 4080 50  0000 L CNN
+F 2 "WeMos_Shield_Greynaga:greynaga6-2-Cooper" H 8875 4125 50  0001 C CNN
+F 3 "" H 8875 4125 50  0001 C CNN
+	1    8875 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L wemos-01-rescue:Logos U6
+U 1 1 6103A0B9
+P 8875 4375
+F 0 "U6" H 8974 4421 50  0000 L CNN
+F 1 "Firma_Mask" H 8974 4330 50  0000 L CNN
+F 2 "WeMos_Shield_Greynaga:greynaga6-2-Mask" H 8875 4375 50  0001 C CNN
+F 3 "" H 8875 4375 50  0001 C CNN
+	1    8875 4375
+	1    0    0    -1  
+$EndComp
+$Comp
+L wemos-01-rescue:Logos U7
+U 1 1 6103A0C3
+P 8875 4625
+F 0 "U7" H 8974 4671 50  0000 L CNN
+F 1 "TTN_Silk" H 8974 4580 50  0000 L CNN
+F 2 "WeMos_Shield_Greynaga:ttn_logo3" H 8875 4625 50  0001 C CNN
+F 3 "" H 8875 4625 50  0001 C CNN
+	1    8875 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L wemos-01-rescue:Logos U8
+U 1 1 6103C993
+P 8875 4875
+F 0 "U8" H 8974 4921 50  0000 L CNN
+F 1 "TTN_Cooper" H 8974 4830 50  0000 L CNN
+F 2 "WeMos_Shield_Greynaga:ttn_logoCu1" H 8875 4875 50  0001 C CNN
+F 3 "" H 8875 4875 50  0001 C CNN
+	1    8875 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L wemos-01-rescue:Logos U?
+U 1 1 6104B664
+P 9875 4125
+F 0 "U?" H 9974 4171 50  0000 L CNN
+F 1 "Firma_Cooper_Back" H 9974 4080 50  0000 L CNN
+F 2 "WeMos_Shield_Greynaga:greynaga6-2-Cooper" H 9875 4125 50  0001 C CNN
+F 3 "" H 9875 4125 50  0001 C CNN
+	1    9875 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L wemos-01-rescue:Logos U?
+U 1 1 6104B66E
+P 9875 4375
+F 0 "U?" H 9974 4421 50  0000 L CNN
+F 1 "Firma_Mask_Back" H 9974 4330 50  0000 L CNN
+F 2 "WeMos_Shield_Greynaga:greynaga6-2-Mask" H 9875 4375 50  0001 C CNN
+F 3 "" H 9875 4375 50  0001 C CNN
+	1    9875 4375
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

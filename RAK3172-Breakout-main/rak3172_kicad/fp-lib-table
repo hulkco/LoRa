@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name RAK3172-Breakout)(type KiCad)(uri "$(KIPRJMOD)/RAK3172-Breakout.pretty")(options "")(descr ""))
+  (lib (name rak3172_kicad)(type KiCad)(uri ${KIPRJMOD}/lbr/rak3172_kicad.pretty)(options "")(descr ""))
+)
